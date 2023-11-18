@@ -16,10 +16,8 @@
   <h2>Listado de tareas</h2>
   <ul>
     <!-- La tareas que vamos hacer dinamicas -->
-  
     <% tareas.forEach(tarea => { %> 
-      <li><%= tarea.title %></li>
-      
+      <%- include('partials/item', { tarea }) %>
     <% }) %>
 </ul>
 

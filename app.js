@@ -10,8 +10,6 @@ const PORT = 4000;
 //leer mis archivos estaticos desde public
 app.use(express.static('public'));
 
-
-
 /// Configuracion ejs
 app.set('view engine', 'ejs');
 app.set('views', './src/views');
